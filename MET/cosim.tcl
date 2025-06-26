@@ -4,7 +4,7 @@ add_files -tb pt.csv
 add_files -tb phi.csv
 add_files -tb testbench.cpp
 # replace with your implementation
-add_files dummy_met.cpp
+add_files example_met.cpp
 set_top compute_met
 
 # Solution
