@@ -11,6 +11,27 @@
 |-----|-----|-----|------|---------|-------------|-------------|
 | ?   | ?   | ?   | ?    | ?       | ?           | ?           |
 
+### First time setup:
+
+```
+git clone https://github.com/FPGA-course-2025/day4.git
+cd day4/arithmetic
+vitis_hls -f csim.tcl
+vitis_hls -f csynth.tcl
+vitis_hls -f cosim.tcl
+vitis_hls &
+```
+
+
+- clone the repository
+- change directory to the arithmetic exercise
+- run the Vitis HLS C Simulation, C Synthesis, Co Simulation steps
+- in the Vitis HLS GUI (after `vitis_hls &` command):
+  - Click "No" to try new IDE
+  - Click -> Open Project
+  - Click -> `ArithmeticProj/` directory
+  - Click -> "Open"
+
 ## Exercise 2. 
 - `vec_sum.h` has a line:
     - `typedef float data_t;` that defines that we used floating point for all of the variables
