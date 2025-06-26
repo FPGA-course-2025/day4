@@ -29,6 +29,7 @@
 1. Accuracy of the MET calculation against the Python reference
     - Aiming for 10 GeV absolute and 2% relative maximum difference
     - Use plots and other tools in the provided Python notebook to judge
+    - After running the C Simulation with `vitis_hls -f csim.tcl`, the new `met_hls.csv` is written to `METProj/solution/csim/build/met_hls.csv`
 2. Resources of MET calculation HLS function
     - Use synthesis reports
 3. Latency of MET calculation HLS function
