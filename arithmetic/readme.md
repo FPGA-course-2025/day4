@@ -14,6 +14,7 @@
 ### First time setup:
 
 ```
+source /opt/tools/Xilinx/Vivado/2023.2/settings64.sh
 git clone https://github.com/FPGA-course-2025/day4.git
 cd day4/arithmetic
 vitis_hls -f csim.tcl
