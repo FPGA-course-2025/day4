@@ -12,7 +12,7 @@ set_part {XC7A100TCSG324-1}
 create_clock -period 10.0 -name default
 
 # Simulation
-csim_design
+csim_design -ldflags "-fuse-ld=gold"
 
 exit
 
