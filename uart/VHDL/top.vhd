@@ -68,15 +68,17 @@ begin  -- architecture str
       busy         => busy,
       uart_tx      => uart_rxd_out);
 
-  -- make an instance of the accumulator following the component definition above
-  -- connect the ports to the right signals to:
-  --  - send the received data from the UART RX module to the HLS one
-  --  - send the data produce by the HLS module to the UART TX
-  --  - handshake between the UART moduels and HLS
-
   accumulator_1 : accumulator
     port map(
-    -- ???
-  );
+      ap_clk => CLK100MHZ,
+      ap_rst => '0',
+      ap_start => data_valid_rx,
+      ap_done => data_valid_tx,
+      ap_idle => open,
+      ap_ready => open,
+      in_r => data_received,
+      out_r => data_to_send,
+      out_r_ap_vld => open
+   );
    
 end architecture str;
